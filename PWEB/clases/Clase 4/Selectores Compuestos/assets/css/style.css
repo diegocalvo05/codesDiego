@@ -1,0 +1,23 @@
+h3 {
+    color: crimson;
+}
+
+h3.inside {
+    font-family: monospace;
+}
+
+article p {
+    text-align: justify;
+}
+
+article>p { /* cuando se usa > es un hijo directo, los p que encuentre dentro del article*/
+    border: 1px solid black;
+}
+
+h3+p { /*p que esta directamente despues del h3*/
+    text-decoration: line-through;
+}
+
+h3~p { /*selecciona cualquier p que esté luego del h3 aunque no esté directamente despues*/
+    font-family: sans-serif;
+}

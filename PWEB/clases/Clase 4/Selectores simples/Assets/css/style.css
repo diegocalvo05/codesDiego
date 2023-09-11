@@ -1,0 +1,35 @@
+.fancy-text {
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: azure;
+}
+
+#unique {
+    font-family: monospace;
+    text-align: center;
+    border: 1px solid black
+}
+
+input {
+    font-size: 20px;
+}
+
+[type="password"] {
+    background-color: black;
+    color: aliceblue;
+    padding: 2px 10px;
+}
+
+.fancy-text:hover {
+    color: crimson;
+}
+
+button::before {
+    content: "->";
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+button::after {
+    content: "<-";
+}

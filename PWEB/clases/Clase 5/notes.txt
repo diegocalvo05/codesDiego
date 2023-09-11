@@ -1,0 +1,15 @@
+Determinar especificidad: 
+
+    article.modal>h3+[type=password]:hover
+    R: (0, 3, 2)
+
+
+    main>h1~section h2.sect-title
+    R: (0, 1, 4)
+
+    header>nav#menu ol>li.menu-item a
+    R: (1, 1, 5)
+
+    :root *
+    R: (0, 1, 0)
+
