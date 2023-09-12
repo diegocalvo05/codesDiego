@@ -1,0 +1,57 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    
+    padding: 0;
+    margin: 0;
+
+    font-family: monospace;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr minmax(50px, 25%);
+    grid-template-rows: minmax(50px, 10%) minmax(50px, 10%) 1fr minmax(100px, 25%);
+
+    grid-template-areas:    "header header"
+                            "nav    nav"
+                            "main   aside" 
+                            "footer footer";
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: grey;
+    grid-area: header;
+}
+
+nav {
+    background: rgb(212, 62, 62);
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+aside {
+    background: rgb(187, 235, 165);
+    grid-area: aside;
+}
+
+footer {
+    background: rgb(180, 158, 158);
+    grid-area: footer;
+}
