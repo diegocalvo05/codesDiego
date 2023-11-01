@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "difficulty": "medium"
+  },
+  {
+    "id": 3,
+    "difficulty": "hard"
+  }
+]
